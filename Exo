@@ -1,0 +1,14 @@
+Base de donnée MySQL
+Intépréteur PHP 7
+Serveur Web
+
+=== 3 conteneurs
+
+- Gérer la persistance des données (Volume) -> MySQL / htdocs / utilisation des volumes nommés avec 'docker volume create'
+- Gestion des ports et du réseau / Création un reseau de type bridge
+
+---------------------
+
+Client <-> Serveur Web (HTML / CSS / Javascript = Fichiers statiques). Si c'est du PHP alors <-> PHP-FPM (exécuter le script PHP) <-> Base de donnée
+
+Si .php (Regex) alors tu transmets via fastcgi à l'interpréteur PHP 
